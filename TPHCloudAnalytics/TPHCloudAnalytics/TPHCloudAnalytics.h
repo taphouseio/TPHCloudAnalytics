@@ -14,6 +14,6 @@ FOUNDATION_EXPORT double TPHCloudAnalyticsVersionNumber;
 //! Project version string for TPHCloudAnalytics.
 FOUNDATION_EXPORT const unsigned char TPHCloudAnalyticsVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <TPHCloudAnalytics/PublicHeader.h>
+#import <TPHCloudAnalytics/TPHAnalyticsKeys.h>
 
 

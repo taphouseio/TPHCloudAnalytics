@@ -8,12 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		93049B6C1F17E1530004A8CF /* TPHCloudAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = 93049B6A1F17E1530004A8CF /* TPHCloudAnalytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93049B7F1F17E1FE0004A8CF /* CloudAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93049B7E1F17E1FE0004A8CF /* CloudAnalytics.swift */; };
+		93049B841F17EBAA0004A8CF /* TPHAnalyticsKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = 93049B821F17EBAA0004A8CF /* TPHAnalyticsKeys.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93049B851F17EBAA0004A8CF /* TPHAnalyticsKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 93049B831F17EBAA0004A8CF /* TPHAnalyticsKeys.m */; };
+		93049B871F17EFBA0004A8CF /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93049B861F17EFBA0004A8CF /* DeviceInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		93049B671F17E1530004A8CF /* TPHCloudAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPHCloudAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93049B6A1F17E1530004A8CF /* TPHCloudAnalytics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPHCloudAnalytics.h; sourceTree = "<group>"; };
 		93049B6B1F17E1530004A8CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93049B7E1F17E1FE0004A8CF /* CloudAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudAnalytics.swift; sourceTree = "<group>"; };
+		93049B811F17E20E0004A8CF /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		93049B821F17EBAA0004A8CF /* TPHAnalyticsKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPHAnalyticsKeys.h; sourceTree = "<group>"; };
+		93049B831F17EBAA0004A8CF /* TPHAnalyticsKeys.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPHAnalyticsKeys.m; sourceTree = "<group>"; };
+		93049B861F17EFBA0004A8CF /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +41,7 @@
 			children = (
 				93049B691F17E1530004A8CF /* TPHCloudAnalytics */,
 				93049B681F17E1530004A8CF /* Products */,
+				93049B801F17E20D0004A8CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,8 +58,20 @@
 			children = (
 				93049B6A1F17E1530004A8CF /* TPHCloudAnalytics.h */,
 				93049B6B1F17E1530004A8CF /* Info.plist */,
+				93049B7E1F17E1FE0004A8CF /* CloudAnalytics.swift */,
+				93049B861F17EFBA0004A8CF /* DeviceInfo.swift */,
+				93049B821F17EBAA0004A8CF /* TPHAnalyticsKeys.h */,
+				93049B831F17EBAA0004A8CF /* TPHAnalyticsKeys.m */,
 			);
 			path = TPHCloudAnalytics;
+			sourceTree = "<group>";
+		};
+		93049B801F17E20D0004A8CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93049B811F17E20E0004A8CF /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,6 +81,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93049B841F17EBAA0004A8CF /* TPHAnalyticsKeys.h in Headers */,
 				93049B6C1F17E1530004A8CF /* TPHCloudAnalytics.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +118,7 @@
 				TargetAttributes = {
 					93049B661F17E1530004A8CF = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 					};
 				};
 			};
@@ -130,6 +154,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93049B7F1F17E1FE0004A8CF /* CloudAnalytics.swift in Sources */,
+				93049B871F17EFBA0004A8CF /* DeviceInfo.swift in Sources */,
+				93049B851F17EBAA0004A8CF /* TPHAnalyticsKeys.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +279,7 @@
 		93049B701F17E1530004A8CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = GECHUE5BZ4;
@@ -264,6 +292,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.taphouse.TPHCloudAnalytics;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -272,6 +301,7 @@
 		93049B711F17E1530004A8CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = GECHUE5BZ4;
@@ -308,6 +338,7 @@
 				93049B711F17E1530004A8CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
