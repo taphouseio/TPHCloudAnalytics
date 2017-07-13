@@ -42,6 +42,21 @@ import CloudKit
         }
     }
     
+    /// Adds a screen view event to the TPHAnalyticsScreenViewEvent record type and links it to the current session.
+    ///
+    /// - Parameter screenName: The name of the screen being viewed.
+    @objc public func trackScreenView(_ screenName: String) {
+        let record = CKRecord(recordType: "TPHAnalyticsScreenViewEvent")
+        record["screenName"] = screenName as NSString
+        record["session"] = CKReference(record: _sessionRecord, action: .deleteSelf)
+        
+        let database = CKContainer(identifier: _containerID).publicCloudDatabase
+        database.save(record) { (savedRecord, error) in
+            let success = error == nil
+            print("Success saving screen view = \(success)")
+        }
+    }
+    
     //MARK: Private
     private enum SessionKey: String {
         case guid = "GUID"
