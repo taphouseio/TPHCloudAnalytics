@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		93049B6C1F17E1530004A8CF /* TPHCloudAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = 93049B6A1F17E1530004A8CF /* TPHCloudAnalytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		93049B7F1F17E1FE0004A8CF /* CloudAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93049B7E1F17E1FE0004A8CF /* CloudAnalytics.swift */; };
-		93049B841F17EBAA0004A8CF /* TPHAnalyticsKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = 93049B821F17EBAA0004A8CF /* TPHAnalyticsKeys.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		93049B851F17EBAA0004A8CF /* TPHAnalyticsKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 93049B831F17EBAA0004A8CF /* TPHAnalyticsKeys.m */; };
 		93049B871F17EFBA0004A8CF /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93049B861F17EFBA0004A8CF /* DeviceInfo.swift */; };
 /* End PBXBuildFile section */
 
@@ -20,8 +18,6 @@
 		93049B6B1F17E1530004A8CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93049B7E1F17E1FE0004A8CF /* CloudAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudAnalytics.swift; sourceTree = "<group>"; };
 		93049B811F17E20E0004A8CF /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
-		93049B821F17EBAA0004A8CF /* TPHAnalyticsKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPHAnalyticsKeys.h; sourceTree = "<group>"; };
-		93049B831F17EBAA0004A8CF /* TPHAnalyticsKeys.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPHAnalyticsKeys.m; sourceTree = "<group>"; };
 		93049B861F17EFBA0004A8CF /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,8 +56,6 @@
 				93049B6B1F17E1530004A8CF /* Info.plist */,
 				93049B7E1F17E1FE0004A8CF /* CloudAnalytics.swift */,
 				93049B861F17EFBA0004A8CF /* DeviceInfo.swift */,
-				93049B821F17EBAA0004A8CF /* TPHAnalyticsKeys.h */,
-				93049B831F17EBAA0004A8CF /* TPHAnalyticsKeys.m */,
 			);
 			path = TPHCloudAnalytics;
 			sourceTree = "<group>";
@@ -81,7 +75,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93049B841F17EBAA0004A8CF /* TPHAnalyticsKeys.h in Headers */,
 				93049B6C1F17E1530004A8CF /* TPHCloudAnalytics.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,7 +149,6 @@
 			files = (
 				93049B7F1F17E1FE0004A8CF /* CloudAnalytics.swift in Sources */,
 				93049B871F17EFBA0004A8CF /* DeviceInfo.swift in Sources */,
-				93049B851F17EBAA0004A8CF /* TPHAnalyticsKeys.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

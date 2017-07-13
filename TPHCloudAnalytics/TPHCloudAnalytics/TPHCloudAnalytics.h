@@ -14,6 +14,5 @@ FOUNDATION_EXPORT double TPHCloudAnalyticsVersionNumber;
 //! Project version string for TPHCloudAnalytics.
 FOUNDATION_EXPORT const unsigned char TPHCloudAnalyticsVersionString[];
 
-#import <TPHCloudAnalytics/TPHAnalyticsKeys.h>
 
 
