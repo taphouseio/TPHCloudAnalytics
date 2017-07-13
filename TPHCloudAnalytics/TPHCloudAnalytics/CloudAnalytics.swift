@@ -12,7 +12,8 @@ import CloudKit
 @objc public final class TPHCloudAnalyticsReporter: NSObject {
     //MARK: API
     /// The singleton to be used for all access to this class
-    @objc public static var shared: TPHCloudAnalyticsReporter {
+    @objc(sharedReporter)
+    public static var shared: TPHCloudAnalyticsReporter {
         guard let _shared = _shared else { fatalError("The analytics reporter needs to be started before the singleton is accessed") }
         return _shared
     }
