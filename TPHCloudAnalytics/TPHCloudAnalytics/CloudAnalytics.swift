@@ -34,7 +34,7 @@ import CloudKit
     @objc public func trackCustomEvent(forKey key: String, value: CKRecordValue?) {
         let record = CKRecord(recordType: "TPHAnalyticsCustomEvent")
         record[key] = value
-        record["session"] = CKReference(record: _sessionRecord, action: .deleteSelf)
+        record["session"] = CKRecord.Reference(record: _sessionRecord, action: .deleteSelf)
         
         let database = CKContainer(identifier: _containerID).publicCloudDatabase
         database.save(record) { (savedRecord, error) in
@@ -49,7 +49,7 @@ import CloudKit
     @objc public func trackScreenView(_ screenName: String) {
         let record = CKRecord(recordType: "TPHAnalyticsScreenViewEvent")
         record["screenName"] = screenName as NSString
-        record["session"] = CKReference(record: _sessionRecord, action: .deleteSelf)
+        record["session"] = CKRecord.Reference(record: _sessionRecord, action: .deleteSelf)
         
         let database = CKContainer(identifier: _containerID).publicCloudDatabase
         database.save(record) { (savedRecord, error) in
