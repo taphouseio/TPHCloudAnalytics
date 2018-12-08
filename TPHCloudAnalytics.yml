@@ -10,4 +10,4 @@ targets:
       - Sources
     configFiles:
       Debug: xcconfigs/TPHCloudAnalytics-Debug.xcconfig
-      Release: xcconfig/TPHCloudAnalytics-Release.xcconfig
+      Release: xcconfigs/TPHCloudAnalytics-Release.xcconfig
