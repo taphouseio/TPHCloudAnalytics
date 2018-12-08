@@ -1,0 +1,13 @@
+name: TPHCloudAnalytics
+configFiles:
+  Debug: xcconfigs/Project-Debug.xcconfig
+  Release: xcconfigs/Project-Release.xcconfig
+targets:
+  TPHCloudAnalytics:
+    type: framework
+    platform: iOS
+    sources:
+      - Sources
+    configFiles:
+      Debug: xcconfigs/TPHCloudAnalytics-Debug.xcconfig
+      Release: xcconfig/TPHCloudAnalytics-Release.xcconfig
