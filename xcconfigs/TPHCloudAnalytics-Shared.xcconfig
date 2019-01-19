@@ -6,6 +6,8 @@
 //
 
 
+LD_NO_PIE = YES
+
 // Enable Modules (C and Objective-C)
 // 
 // Enables the use of modules for system APIs. System headers are imported as semantic
