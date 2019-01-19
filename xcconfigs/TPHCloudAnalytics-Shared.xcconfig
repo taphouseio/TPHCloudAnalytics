@@ -6,7 +6,7 @@
 //
 
 
-LD_NO_PIE = YES
+LD_NO_PIE[sdk=*simulator*] = YES
 
 // Enable Modules (C and Objective-C)
 // 
