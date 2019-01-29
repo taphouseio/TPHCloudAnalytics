@@ -7,7 +7,8 @@ targets:
     type: framework
     platform: iOS
     sources:
-      - Sources
+      - path: Sources
+        name: TPHCloudAnalytics
     configFiles:
       Debug: xcconfigs/TPHCloudAnalytics-Debug.xcconfig
       Release: xcconfigs/TPHCloudAnalytics-Release.xcconfig
