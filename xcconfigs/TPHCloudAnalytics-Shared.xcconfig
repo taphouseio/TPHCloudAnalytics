@@ -95,7 +95,7 @@ DYLIB_INSTALL_NAME_BASE = @rpath
 // in [Runtime Configuration
 // Guidelines](https://developer.apple.com/library/content/documentation/MacOSX/Conceptual/BPRuntimeConfig/000-Introduction/introduction.html).
 
-INFOPLIST_FILE = $(SRCROOT)/Scorebook/Submodules/TPHCloudAnalytics/Supporting Files/Info.plist
+INFOPLIST_FILE = $(SRCROOT)/Modules/Submodules/TPHCloudAnalytics/Supporting Files/Info.plist
 
 
 
